@@ -1,0 +1,392 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-D', 'parcel' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData parcel
+8 silly fetchNamedPackageData parcel
+9 silly mapToRegistry name parcel
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/parcel
+13 verbose request uri https://registry.npmjs.org/parcel
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 23:02:26
+16 verbose request id 4da0c838bba45adb
+17 verbose etag W/"69fe3e85ac891048ce30014c335f891a"
+18 verbose lastModified Fri, 06 Jan 2023 00:42:51 GMT
+19 http request GET https://registry.npmjs.org/parcel
+20 http 304 https://registry.npmjs.org/parcel
+21 verbose headers { date: 'Fri, 06 Jan 2023 17:32:27 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '7856316cef9e8600-BOM',
+21 verbose headers   age: '285',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: '"69fe3e85ac891048ce30014c335f891a"',
+21 verbose headers   'last-modified': 'Fri, 06 Jan 2023 00:42:51 GMT',
+21 verbose headers   vary: 'Accept-Encoding',
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'x-amz-replication-status': 'COMPLETED',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 06 Jan 2023 17:32:27 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '7856316cef9e8600-BOM',
+22 silly get     age: '285',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: '"69fe3e85ac891048ce30014c335f891a"',
+22 silly get     'last-modified': 'Fri, 06 Jan 2023 00:42:51 GMT',
+22 silly get     vary: 'Accept-Encoding',
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'x-amz-replication-status': 'COMPLETED',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/parcel from cache
+24 verbose get saving parcel to /home/rohan/.npm/registry.npmjs.org/parcel/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule parcel@2.8.2 checking installable status
+38 silly cache add args [ 'parcel', null ]
+39 verbose cache add spec parcel
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'parcel',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'parcel',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed parcel@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for parcel
+43 info addNameTag [ 'parcel', 'latest' ]
+44 silly mapToRegistry name parcel
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/parcel
+48 verbose addNameTag registry:https://registry.npmjs.org/parcel not in flight; fetching
+49 verbose get https://registry.npmjs.org/parcel not expired, no request
+50 silly addNameTag next cb for parcel with tag latest
+51 silly addNamed parcel@2.8.2
+52 verbose addNamed "2.8.2" is a plain semver version for parcel
+53 silly cache afterAdd parcel@2.8.2
+54 verbose afterAdd /home/rohan/.npm/parcel/2.8.2/package/package.json not in flight; writing
+55 verbose afterAdd /home/rohan/.npm/parcel/2.8.2/package/package.json written
+56 silly fetchNamedPackageData @parcel/config-default
+57 silly mapToRegistry name @parcel/config-default
+58 silly mapToRegistry scope (from package name) @parcel
+59 verbose mapToRegistry no registry URL found in name for scope @parcel
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2fconfig-default
+63 silly fetchNamedPackageData @parcel/core
+64 silly mapToRegistry name @parcel/core
+65 silly mapToRegistry scope (from package name) @parcel
+66 verbose mapToRegistry no registry URL found in name for scope @parcel
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npmjs.org/
+69 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2fcore
+70 silly fetchNamedPackageData @parcel/diagnostic
+71 silly mapToRegistry name @parcel/diagnostic
+72 silly mapToRegistry scope (from package name) @parcel
+73 verbose mapToRegistry no registry URL found in name for scope @parcel
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2fdiagnostic
+77 silly fetchNamedPackageData @parcel/events
+78 silly mapToRegistry name @parcel/events
+79 silly mapToRegistry scope (from package name) @parcel
+80 verbose mapToRegistry no registry URL found in name for scope @parcel
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2fevents
+84 silly fetchNamedPackageData @parcel/fs
+85 silly mapToRegistry name @parcel/fs
+86 silly mapToRegistry scope (from package name) @parcel
+87 verbose mapToRegistry no registry URL found in name for scope @parcel
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2ffs
+91 silly fetchNamedPackageData @parcel/logger
+92 silly mapToRegistry name @parcel/logger
+93 silly mapToRegistry scope (from package name) @parcel
+94 verbose mapToRegistry no registry URL found in name for scope @parcel
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2flogger
+98 silly fetchNamedPackageData @parcel/package-manager
+99 silly mapToRegistry name @parcel/package-manager
+100 silly mapToRegistry scope (from package name) @parcel
+101 verbose mapToRegistry no registry URL found in name for scope @parcel
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2fpackage-manager
+105 silly fetchNamedPackageData @parcel/reporter-cli
+106 silly mapToRegistry name @parcel/reporter-cli
+107 silly mapToRegistry scope (from package name) @parcel
+108 verbose mapToRegistry no registry URL found in name for scope @parcel
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2freporter-cli
+112 silly fetchNamedPackageData @parcel/reporter-dev-server
+113 silly mapToRegistry name @parcel/reporter-dev-server
+114 silly mapToRegistry scope (from package name) @parcel
+115 verbose mapToRegistry no registry URL found in name for scope @parcel
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2freporter-dev-server
+119 silly fetchNamedPackageData @parcel/utils
+120 silly mapToRegistry name @parcel/utils
+121 silly mapToRegistry scope (from package name) @parcel
+122 verbose mapToRegistry no registry URL found in name for scope @parcel
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry uri https://registry.npmjs.org/@parcel%2futils
+126 silly fetchNamedPackageData chalk
+127 silly mapToRegistry name chalk
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry uri https://registry.npmjs.org/chalk
+131 silly fetchNamedPackageData commander
+132 silly mapToRegistry name commander
+133 silly mapToRegistry using default registry
+134 silly mapToRegistry registry https://registry.npmjs.org/
+135 silly mapToRegistry uri https://registry.npmjs.org/commander
+136 silly fetchNamedPackageData get-port
+137 silly mapToRegistry name get-port
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry uri https://registry.npmjs.org/get-port
+141 silly fetchNamedPackageData v8-compile-cache
+142 silly mapToRegistry name v8-compile-cache
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry uri https://registry.npmjs.org/v8-compile-cache
+146 verbose request uri https://registry.npmjs.org/@parcel%2fcore
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 23:02:28
+149 verbose etag W/"2e4bccd9d75ab856c6615593372be56c"
+150 verbose lastModified Fri, 06 Jan 2023 00:41:24 GMT
+151 http request GET https://registry.npmjs.org/@parcel%2fcore
+152 verbose request uri https://registry.npmjs.org/@parcel%2fconfig-default
+153 verbose request no auth needed
+154 info attempt registry request try #1 at 23:02:28
+155 verbose etag W/"42a480cb18b8b9af339671bc6835e7f0"
+156 verbose lastModified Fri, 06 Jan 2023 00:42:42 GMT
+157 http request GET https://registry.npmjs.org/@parcel%2fconfig-default
+158 verbose request uri https://registry.npmjs.org/@parcel%2fdiagnostic
+159 verbose request no auth needed
+160 info attempt registry request try #1 at 23:02:28
+161 verbose etag W/"577b9ed0fd82d6243292b5ffb1eff47d"
+162 verbose lastModified Fri, 06 Jan 2023 00:40:49 GMT
+163 http request GET https://registry.npmjs.org/@parcel%2fdiagnostic
+164 verbose request uri https://registry.npmjs.org/@parcel%2fevents
+165 verbose request no auth needed
+166 info attempt registry request try #1 at 23:02:28
+167 verbose etag W/"6aef7f41364e4d217847a7fca6a687c2"
+168 verbose lastModified Fri, 06 Jan 2023 00:40:55 GMT
+169 http request GET https://registry.npmjs.org/@parcel%2fevents
+170 verbose request uri https://registry.npmjs.org/@parcel%2ffs
+171 verbose request no auth needed
+172 info attempt registry request try #1 at 23:02:28
+173 verbose etag W/"fb25c9a5ab18059cdc7bcf31c89f28f8"
+174 verbose lastModified Fri, 06 Jan 2023 00:41:15 GMT
+175 http request GET https://registry.npmjs.org/@parcel%2ffs
+176 verbose request uri https://registry.npmjs.org/@parcel%2flogger
+177 verbose request no auth needed
+178 info attempt registry request try #1 at 23:02:28
+179 verbose etag W/"8115f4a15544b98ee70a024cbafe4089"
+180 verbose lastModified Fri, 06 Jan 2023 00:41:01 GMT
+181 http request GET https://registry.npmjs.org/@parcel%2flogger
+182 verbose request uri https://registry.npmjs.org/@parcel%2fpackage-manager
+183 verbose request no auth needed
+184 info attempt registry request try #1 at 23:02:28
+185 verbose etag W/"9cfa0dda6218a34ce65b3832e0e94cc4"
+186 verbose lastModified Fri, 06 Jan 2023 00:41:09 GMT
+187 http request GET https://registry.npmjs.org/@parcel%2fpackage-manager
+188 verbose request uri https://registry.npmjs.org/@parcel%2freporter-cli
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 23:02:28
+191 verbose etag W/"bd68500e1272e2c8fdabdad71609d2ec"
+192 verbose lastModified Fri, 06 Jan 2023 00:41:49 GMT
+193 http request GET https://registry.npmjs.org/@parcel%2freporter-cli
+194 verbose request uri https://registry.npmjs.org/chalk
+195 verbose request no auth needed
+196 info attempt registry request try #1 at 23:02:28
+197 verbose etag W/"abb6079a7577d1bcc328259b43586d75"
+198 verbose lastModified Mon, 19 Dec 2022 11:49:03 GMT
+199 http request GET https://registry.npmjs.org/chalk
+200 verbose request uri https://registry.npmjs.org/@parcel%2freporter-dev-server
+201 verbose request no auth needed
+202 info attempt registry request try #1 at 23:02:28
+203 verbose etag W/"807e239550f4f26dcebb2aa5992733c9"
+204 verbose lastModified Fri, 06 Jan 2023 00:41:52 GMT
+205 http request GET https://registry.npmjs.org/@parcel%2freporter-dev-server
+206 verbose request uri https://registry.npmjs.org/v8-compile-cache
+207 verbose request no auth needed
+208 info attempt registry request try #1 at 23:02:28
+209 verbose etag W/"1dce6e9878792c06365b904729a2b691"
+210 verbose lastModified Tue, 28 Jun 2022 08:10:36 GMT
+211 http request GET https://registry.npmjs.org/v8-compile-cache
+212 verbose request uri https://registry.npmjs.org/get-port
+213 verbose request no auth needed
+214 info attempt registry request try #1 at 23:02:28
+215 verbose etag W/"d7efc9da9ab5a9d3cd12fd1c0bd3fb6f"
+216 verbose lastModified Sat, 18 Jun 2022 07:52:52 GMT
+217 http request GET https://registry.npmjs.org/get-port
+218 verbose request uri https://registry.npmjs.org/@parcel%2futils
+219 verbose request no auth needed
+220 info attempt registry request try #1 at 23:02:28
+221 verbose etag W/"c2e522096b612532554832203be0c567"
+222 verbose lastModified Fri, 06 Jan 2023 00:41:04 GMT
+223 http request GET https://registry.npmjs.org/@parcel%2futils
+224 verbose request uri https://registry.npmjs.org/commander
+225 verbose request no auth needed
+226 info attempt registry request try #1 at 23:02:28
+227 verbose etag W/"1732cef6c59c6c49f6672a959cb68776"
+228 verbose lastModified Mon, 19 Dec 2022 11:49:01 GMT
+229 http request GET https://registry.npmjs.org/commander
+230 http 304 https://registry.npmjs.org/commander
+231 verbose headers { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+231 verbose headers   connection: 'keep-alive',
+231 verbose headers   'cf-ray': '785631748a0e6ec4-BOM',
+231 verbose headers   age: '33',
+231 verbose headers   'cache-control': 'public, max-age=300',
+231 verbose headers   etag: '"1732cef6c59c6c49f6672a959cb68776"',
+231 verbose headers   'last-modified': 'Mon, 19 Dec 2022 11:49:01 GMT',
+231 verbose headers   vary: 'Accept-Encoding',
+231 verbose headers   'cf-cache-status': 'HIT',
+231 verbose headers   'x-amz-replication-status': 'PENDING',
+231 verbose headers   server: 'cloudflare' }
+232 silly get cb [ 304,
+232 silly get   { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+232 silly get     connection: 'keep-alive',
+232 silly get     'cf-ray': '785631748a0e6ec4-BOM',
+232 silly get     age: '33',
+232 silly get     'cache-control': 'public, max-age=300',
+232 silly get     etag: '"1732cef6c59c6c49f6672a959cb68776"',
+232 silly get     'last-modified': 'Mon, 19 Dec 2022 11:49:01 GMT',
+232 silly get     vary: 'Accept-Encoding',
+232 silly get     'cf-cache-status': 'HIT',
+232 silly get     'x-amz-replication-status': 'PENDING',
+232 silly get     server: 'cloudflare' } ]
+233 verbose etag https://registry.npmjs.org/commander from cache
+234 verbose get saving commander to /home/rohan/.npm/registry.npmjs.org/commander/.cache.json
+235 http 304 https://registry.npmjs.org/@parcel%2fpackage-manager
+236 verbose headers { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+236 verbose headers   connection: 'keep-alive',
+236 verbose headers   'cf-ray': '785631748d39f2eb-BOM',
+236 verbose headers   age: '31',
+236 verbose headers   'cache-control': 'public, max-age=300',
+236 verbose headers   etag: '"9cfa0dda6218a34ce65b3832e0e94cc4"',
+236 verbose headers   'last-modified': 'Fri, 06 Jan 2023 00:41:09 GMT',
+236 verbose headers   vary: 'Accept-Encoding',
+236 verbose headers   'cf-cache-status': 'HIT',
+236 verbose headers   'x-amz-replication-status': 'COMPLETED',
+236 verbose headers   server: 'cloudflare' }
+237 silly get cb [ 304,
+237 silly get   { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+237 silly get     connection: 'keep-alive',
+237 silly get     'cf-ray': '785631748d39f2eb-BOM',
+237 silly get     age: '31',
+237 silly get     'cache-control': 'public, max-age=300',
+237 silly get     etag: '"9cfa0dda6218a34ce65b3832e0e94cc4"',
+237 silly get     'last-modified': 'Fri, 06 Jan 2023 00:41:09 GMT',
+237 silly get     vary: 'Accept-Encoding',
+237 silly get     'cf-cache-status': 'HIT',
+237 silly get     'x-amz-replication-status': 'COMPLETED',
+237 silly get     server: 'cloudflare' } ]
+238 verbose etag https://registry.npmjs.org/@parcel%2fpackage-manager from cache
+239 verbose get saving @parcel/package-manager to /home/rohan/.npm/registry.npmjs.org/_40parcel_252fpackage-manager/.cache.json
+240 http 304 https://registry.npmjs.org/@parcel%2freporter-cli
+241 verbose headers { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+241 verbose headers   connection: 'keep-alive',
+241 verbose headers   'cf-ray': '785631746ddaf44a-BOM',
+241 verbose headers   age: '30',
+241 verbose headers   'cache-control': 'public, max-age=300',
+241 verbose headers   etag: '"bd68500e1272e2c8fdabdad71609d2ec"',
+241 verbose headers   'last-modified': 'Fri, 06 Jan 2023 00:41:49 GMT',
+241 verbose headers   vary: 'Accept-Encoding',
+241 verbose headers   'cf-cache-status': 'HIT',
+241 verbose headers   'x-amz-replication-status': 'COMPLETED',
+241 verbose headers   server: 'cloudflare' }
+242 silly get cb [ 304,
+242 silly get   { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+242 silly get     connection: 'keep-alive',
+242 silly get     'cf-ray': '785631746ddaf44a-BOM',
+242 silly get     age: '30',
+242 silly get     'cache-control': 'public, max-age=300',
+242 silly get     etag: '"bd68500e1272e2c8fdabdad71609d2ec"',
+242 silly get     'last-modified': 'Fri, 06 Jan 2023 00:41:49 GMT',
+242 silly get     vary: 'Accept-Encoding',
+242 silly get     'cf-cache-status': 'HIT',
+242 silly get     'x-amz-replication-status': 'COMPLETED',
+242 silly get     server: 'cloudflare' } ]
+243 verbose etag https://registry.npmjs.org/@parcel%2freporter-cli from cache
+244 verbose get saving @parcel/reporter-cli to /home/rohan/.npm/registry.npmjs.org/_40parcel_252freporter-cli/.cache.json
+245 http 304 https://registry.npmjs.org/@parcel%2flogger
+246 verbose headers { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+246 verbose headers   connection: 'keep-alive',
+246 verbose headers   'cf-ray': '785631748d6f85eb-BOM',
+246 verbose headers   age: '31',
+246 verbose headers   'cache-control': 'public, max-age=300',
+246 verbose headers   etag: '"8115f4a15544b98ee70a024cbafe4089"',
+246 verbose headers   'last-modified': 'Fri, 06 Jan 2023 00:41:01 GMT',
+246 verbose headers   vary: 'Accept-Encoding',
+246 verbose headers   'cf-cache-status': 'HIT',
+246 verbose headers   'x-amz-replication-status': 'COMPLETED',
+246 verbose headers   server: 'cloudflare' }
+247 silly get cb [ 304,
+247 silly get   { date: 'Fri, 06 Jan 2023 17:32:28 GMT',
+247 silly get     connection: 'keep-alive',
+247 silly get     'cf-ray': '785631748d6f85eb-BOM',
+247 silly get     age: '31',
+247 silly get     'cache-control': 'public, max-age=300',
+247 silly get     etag: '"8115f4a15544b98ee70a024cbafe4089"',
+247 silly get     'last-modified': 'Fri, 06 Jan 2023 00:41:01 GMT',
+247 silly get     vary: 'Accept-Encoding',
+247 silly get     'cf-cache-status': 'HIT',
+247 silly get     'x-amz-replication-status': 'COMPLETED',
+247 silly get     server: 'cloudflare' } ]
+248 verbose etag https://registry.npmjs.org/@parcel%2flogger from cache
+249 verbose get saving @parcel/logger to /home/rohan/.npm/registry.npmjs.org/_40parcel_252flogger/.cache.json
+250 verbose stack Error: Missing required argument #1
+250 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+250 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+250 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+250 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+250 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+250 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+250 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+250 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+250 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+250 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+251 verbose cwd /home/rohan/Workspace/REACT_NEW
+252 error Linux 5.4.0-58-generic
+253 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-D" "parcel"
+254 error node v8.10.0
+255 error npm  v3.5.2
+256 error code EMISSINGARG
+257 error typeerror Error: Missing required argument #1
+257 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+257 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+257 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+257 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+257 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+257 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+257 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+257 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+257 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+257 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+258 error typeerror This is an error with npm itself. Please report this error at:
+258 error typeerror     <http://github.com/npm/npm/issues>
+259 verbose exit [ 1, true ]
